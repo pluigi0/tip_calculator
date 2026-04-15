@@ -4,7 +4,7 @@ A clean, minimal tip calculator built with vanilla HTML, CSS, and JavaScript. No
 
 ## Live Demo
 
-[View it live](https://yourusername.github.io/tip-calculator) <!-- Replace with your GitHub Pages URL -->
+[View it live](https://github.com/pluigi0/tip_calculator) 
 
 ## Features
 
@@ -25,7 +25,7 @@ A clean, minimal tip calculator built with vanilla HTML, CSS, and JavaScript. No
 No installation needed. Just open `index.html` in your browser.
 
 ```bash
-git clone https://github.com/yourusername/tip-calculator.git
+git clone https://github.com/pluigi0/tip_calculator
 cd tip-calculator
 open index.html
 ```
