@@ -1,0 +1,213 @@
+   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f5f0e8;
+      --surface: #ffffff;
+      --text: #1a1a1a;
+      --muted: #7a7570;
+      --accent: #2d6a4f;
+      --accent-light: #e8f5ee;
+      --accent-dark: #1b4332;
+      --border: #e0d9ce;
+      --radius: 16px;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    .field {
+      margin-bottom: 1.25rem;
+    }
+
+    label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      color: var(--text);
+      background: var(--bg);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    input[type="number"]:focus {
+      border-color: var(--accent);
+    }
+
+    input[type="number"]::placeholder {
+      color: #c0bbb5;
+    }
+
+    .tip-buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 1.25rem;
+    }
+
+    .tip-btn {
+      padding: 0.6rem 0.25rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--bg);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .tip-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .tip-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    .custom-tip-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 1.25rem;
+    }
+
+    .custom-tip-wrap label {
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    .custom-tip-wrap input {
+      flex: 1;
+    }
+
+    .results {
+      background: var(--accent-dark);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+      color: #fff;
+    }
+
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+    }
+
+    .result-row + .result-row {
+      border-top: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .result-label {
+      font-size: 0.82rem;
+      opacity: 0.7;
+      letter-spacing: 0.3px;
+    }
+
+    .result-value {
+      font-size: 1.15rem;
+      font-weight: 500;
+    }
+
+    .result-row.total .result-label {
+      font-size: 0.9rem;
+      opacity: 1;
+      font-weight: 500;
+    }
+
+    .result-row.total .result-value {
+      font-size: 1.45rem;
+      font-family: 'DM Serif Display', serif;
+      font-weight: 400;
+    }
+
+    .per-person {
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .per-person .result-label {
+      opacity: 1;
+      font-size: 0.85rem;
+    }
+
+    .per-person .result-value {
+      font-size: 1.25rem;
+    }
+
+    .reset-btn {
+      width: 100%;
+      margin-top: 1.25rem;
+      padding: 0.75rem;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.9rem;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .reset-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button { -webkit-appearance: none; }
+    input[type=number] { -moz-appearance: textfield; }
